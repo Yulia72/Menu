@@ -1,0 +1,28 @@
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.b1,
+.b2,
+.b3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.change .b1 { /*міняє положення*/
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .b2 { /*b2 стає невидимою*/
+    opacity: 0;
+}
+
+.change .b3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
